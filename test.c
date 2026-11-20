@@ -7,9 +7,9 @@ int strlength(char* binaer, int len) { //Hier wird die Anzahl der Binaerzahl ber
     return 0;
 }
 
-int power(int base, int exp, int number, int multiplikator, int dezimalzahl) { //Hier wird die Rechnung erledigt
+int power(int base, int exp, int number, int multiplikator) { //Hier wird die Rechnung erledigt
     for (int i = 0; i < exp; i++) {
-        number = base;
+        number = base * multiplikator;
         number *= exp;
     }
 
